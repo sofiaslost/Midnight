@@ -1,0 +1,3 @@
+[submodule "CollabVMSharp"]
+	path = CollabVMSharp
+	url = https://git.computernewb.com/Elijah/CollabVMSharp.git
