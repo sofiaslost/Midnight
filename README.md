@@ -2,4 +2,10 @@
 Welcome in 👋
 
 ## What is this repo about?
-Midnight is a work in progress CollabVM bot. I'm making this repo to learn how to use CollabVMSharp.
+Midnight is a work in progress UserVM bot. I'm making this repo to learn how to use CollabVMSharp.
+
+## Bot Commands
+| Command Name  | Command Usage |
+| ------------- | ------------- |
+| !quote  | !quote <username>  |
+| !help  | Shows all of the commands that the bot has to offer  |
