@@ -12,7 +12,7 @@ ModAPIPassword = ""
 HttpPort = 8696
 
 [Discord]
-Token = "
+Token = ""
 ModRoles = [1320503126163460147, 1326312734467424258]
 ReportPingRole = 1320503126163460147
 ReportChannel = 1324753635707719720
