@@ -1,0 +1,31 @@
+Username = "Midnight"
+KnownBots = ["AnyaHostingBot", "AnyOSInstallBot", "Emperor Palpatine", "Emperor Kevin", "General Darian", "Specialized Egg"]
+IPInfoToken = ""
+ConnectRetryMaxSeconds = 120
+VMs = [
+	{ Name = "SofiaVM1", URL = "wss://sofiaslost.co.uk/sofia-vm/sofiavm1", Node = "sofiavm1", Password = "" },
+    { Name = "SofiaVM2", URL = "wss://sofiaslost.co.uk/sofia-vm/sofiavm2", Node = "sofiavm2", Password = "" },
+]
+
+[API]
+ModAPIPassword = ""
+HttpPort = 8696
+
+[Discord]
+Token = "
+ModRoles = [1320503126163460147, 1326312734467424258]
+ReportPingRole = 1320503126163460147
+ReportChannel = 1324753635707719720
+
+[Database]
+Host = "127.0.0.1"
+Username = "root"
+Password = "db-password"
+Database = "midnight"
+
+[[Filters]]
+Description = "Contains \"fag\""
+CheckUsername = true
+CheckMessage = true
+Regex = "fag"
+Punishment = "TempMute"

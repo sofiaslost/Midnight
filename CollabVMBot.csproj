@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CollabVMSharp" Version="2.6.0" />
+    <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02188" />
+    <PackageReference Include="DSharpPlus.SlashCommands" Version="5.0.0-nightly-02188" />
+    <PackageReference Include="IPinfo" Version="3.0.1" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <PackageReference Include="Polly" Version="8.5.2" />
+    <PackageReference Include="Samboy063.Tomlet" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+  </ItemGroup>
+
+</Project>
