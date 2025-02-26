@@ -59,6 +59,7 @@ public class VM
         // Bot Commands
         this.cvm.RegisterCommand("!quote", QuoteCommand);
         this.cvm.RegisterCommand("!help", HelpCommand);
+        this.cvm.RegisterCommand("!about", AboutCommand);
     }
 
     private async void QuoteCommand(string username, string[] args)
@@ -86,11 +87,21 @@ public class VM
 
     private async void HelpCommand(string username, string msg)
     {
-        string helpEncode = WebUtility.HtmlEncode("<h4>Midnight Help Menu:</h4>");
+        string htmlCode = """
+            <h4><b>Midnight Help Menu</b></h4>
+            <p>!quote | usage !quote username<br>!help | Shows this help menu<br>!about | Who is Midnight? </p>
+        """;
+
+        string helpEncode = WebUtility.HtmlEncode(htmlCode);
         string helpDecode = WebUtility.HtmlDecode(helpEncode);
 
-        await cvm.SendXSSChat($"\"{WebUtility.HtmlDecode(helpDecode)}");
+        await cvm.SendXSSChat(WebUtility.HtmlDecode(helpDecode));
         Console.WriteLine($"Printed html code: {helpDecode}");
+    }
+
+    private async void AboutCommand(string username, string msg)
+    {
+        await cvm.SendChat("Midnight is a UserVM bot that is built using CollabVMSharp. The source code is currently up on GitHub @ github.com/sofiaslost/Midnight");
     }
 
     private void CvmOnConnectionClosed(object? sender, EventArgs e)
